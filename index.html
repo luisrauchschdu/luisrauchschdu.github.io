@@ -46,16 +46,23 @@ Kontakt:    luis.wuethrich@novartis.com
                   Dropdown link
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="#">Events</a>
+                  <a class="dropdown-item" href="#">Das Kollektiv</a>
+                  <a class="dropdown-item" href="#">Gallerie</a>
+                  <a class="dropdown-item" href="#">Kontakt</a>
                 </div>
               </li>
             </ul>
           </div>
         </nav>
-       <img id="logo" src="logo.png" height="100%" width="100%"></img>
+       <img class="logo" src="logo.png" height="100%" width="100%"></img>
        <p id="construction">... under construction ...</p>
      </div>
+     <script type="text/javascript">
+       document.addEventListener("scroll", function() {
+         scrollHeight = window.pageYOffset;
+         document.getElementsByClassName("logo")[0].style.height = scrollHeight >= 200 ? "20px" : "";
+       }, false);
+     </script>
   </body>
 </html>
